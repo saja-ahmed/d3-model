@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>3D Object</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
+
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Auto-car-logo-,-sport-cars-on-transparent-background-PNG.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </header>
+    <div id="container">
+        <!-- An aside -->
+        <!-- This is for holding the 3D object -->
+        <div id="aSide">
+            <model-viewer  src="scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="scene.gltf"></model-viewer>
+
+        </div>
+
+        <!-- Content container -->
+        <!-- This is for holding some brief description about the 3D object -->
+        <div id="content">
+            <h2>My first experience with 3D models on the website</h2>
+            <button>Shop</button>
+        </div>
+    </div>
+</body>
+</html>
